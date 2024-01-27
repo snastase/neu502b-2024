@@ -60,15 +60,15 @@ Select `GitHub.com`, `HTTPS`,  `Yes` and `Paste an authentication token`. Then, 
 
 ## Forking and cloning the repository
 
-On the GitHub repository page (https://github.com/2023-NEU502B/neu502b-lab), click the _Fork_ button at top right. Click _Create fork_ to create a copy of the repository on your own GitHub account.
+On the GitHub repository page ([https://github.com/2023-NEU502B/neu502b-lab](https://github.com/NEU502B/neu502b-2024)), click the _Fork_ button at top right. Click _Create fork_ to create a copy of the repository on your own GitHub account.
 
 Back to the terminal: If you don't already have a directory for this class, make one (`mkdir neu502b`) and navigate into it (`cd neu502b`).
 
 Now, you'll clone your own fork of the repository (specify your GitHub username below) into your class directory:
 
 ```
-git clone https://github.com/username/neu502b-lab.git
-cd neu502b-lab
+git clone https://github.com/NEU502B/neu502b-2024
+cd neu502b-2024
 ```
 
 ## Running the notebooks
