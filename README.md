@@ -60,7 +60,7 @@ Select `GitHub.com`, `HTTPS`,  `Yes` and `Paste an authentication token`. Then, 
 
 ## Forking and cloning the repository
 
-On the GitHub repository page ([https://github.com/2023-NEU502B/neu502b-lab](https://github.com/NEU502B/neu502b-2024)), click the _Fork_ button at top right. Click _Create fork_ to create a copy of the repository on your own GitHub account.
+On the GitHub repository page (https://github.com/NEU502B/neu502b-2024), click the _Fork_ button at top right. Click _Create fork_ to create a copy of the repository on your own GitHub account.
 
 Back to the terminal: If you don't already have a directory for this class, make one (`mkdir neu502b`) and navigate into it (`cd neu502b`).
 
@@ -87,8 +87,7 @@ You'll need to (re)activate the conda environment again inside the tmux session.
 jupyter lab --no-browser
 ```
 
-Next, copy the full URL output by the `jupyter lab` command on the server (including the authentication token); e.g. `http://localhost:8888/?
-token=abcdefghijklmnopqrstuv0123456789abcdefghijklmnop`
+Next, copy the full URL output by the `jupyter lab` command on the server (including the authentication token); e.g. `http://localhost:8888/?token=abcdefghijklmnopqrstuv0123456789abcdefghijklmnop`
 
 Now, open a local terminal and set up an SSH tunnel using the remote port (`8888` in the above example):
 
