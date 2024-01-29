@@ -67,7 +67,7 @@ Back to the terminal: If you don't already have a directory for this class, make
 Now, you'll clone your own fork of the repository (specify your GitHub username below) into your class directory:
 
 ```
-git clone https://github.com/NEU502B/neu502b-2024
+git clone https://github.com/username/neu502b-2024
 cd neu502b-2024
 ```
 
