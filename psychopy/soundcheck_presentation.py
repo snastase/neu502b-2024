@@ -11,7 +11,7 @@ prefs.general['audioLib'] = ['sounddevice']
 prefs.general['audioDriver'] = ['coreaudio']
 prefs.general['audioDevice'] = ['Built-in Line Output']
 from psychopy import core, event, logging, sound, visual
-print sound.Sound
+print(sound.Sound)
 
 # Command line arguments for audio file and initial volume
 audio_fn = sys.argv[1]
@@ -56,25 +56,25 @@ stimulus = sound.Sound(audio_fn, stereo=False,
                        volume=volume, name=audio_fn)
 
 # Open window and provide instructions
-win = visual.Window([1280, 720], screen=0, fullscr=True, color=0, name='Window')
+win = visual.Window([1280, 720], screen=1, fullscr=True, color=0, name='Window')
 
 instructions = visual.TextStim(win, pos=[-.9, .9], wrapWidth=1.7,
-                               alignHoriz='left', alignVert='top', name='Instructions',
+                               anchorHoriz='left', anchorVert='top', name='Instructions',
                                text=("Use the buttons to adjust the volume until "
                                      "you can hear and understand clearly. "
                                      "Button 1 is closest to the cord and button "
                                      "4 is farthest from the cord."))
 
 buttons = visual.TextStim(win, pos=[0, .2], wrapWidth=1.5,
-                          alignHoriz='center', alignVert='top', name='Button list',
+                          anchorHoriz='center', anchorVert='top', name='Button list',
                           text=("button 1: volume +\n"
                                 "button 2: volume -\n"
                                 "button 4: finished"))
 
 ready = visual.TextStim(win, pos=[0, -.4], wrapWidth=1,
-                        alignHoriz='center', alignVert='top',
+                        anchorHoriz='center', anchorVert='top',
                         text="Ready?")
-ready_button = visual.TextStim(win, pos=[0, -.55], alignHoriz='center',
+ready_button = visual.TextStim(win, pos=[0, -.55], anchorHoriz='center',
                                text="(press button 1 to continue)")
 
 instructions.draw()
@@ -120,7 +120,7 @@ while volume_scale.noResponse:
 stimulus.stop()
 
 soundcheck_finished = visual.TextStim(win, pos=[0, 0], wrapWidth=1,
-                                      alignHoriz='center', alignVert='top',
+                                      anchorHoriz='center', anchorVert='top',
                                       text="Sound check finished!")
 soundcheck_finished.draw()
 win.flip()
